@@ -718,7 +718,9 @@
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions" value="&quot;PK_UID&quot;"/>
+        <property key="dualview/previewExpressions">
+          <value>"PK_UID"</value>
+        </property>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -846,8 +848,8 @@
       <SearchMethod type="int">0</SearchMethod>
       <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
       <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
       <CandidatesPoint type="int">16</CandidatesPoint>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
       <CandidatesPolygon type="int">30</CandidatesPolygon>
       <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <ShowingCandidates type="bool">false</ShowingCandidates>

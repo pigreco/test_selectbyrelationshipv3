@@ -18,13 +18,13 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer checked="Qt::Unchecked" source="dbname='C:/Users/Salvatore/Desktop/selectby/db_test_SbyR_v3.sqlite' table=&quot;regioni_g&quot; (geom) sql=" expanded="1" id="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" name="regioni_g" providerKey="spatialite">
+    <layer-tree-layer checked="Qt::Unchecked" expanded="1" source="dbname='F:/test_selectbyrelationshipv3/db_test_SbyR_v3.sqlite' table=&quot;regioni_g&quot; (geom) sql=" id="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" providerKey="spatialite" name="regioni_g">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" source="dbname='C:/Users/Salvatore/Desktop/selectby/db_test_SbyR_v3.sqlite' table=&quot;province_g&quot; (geom) sql=" expanded="1" id="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" name="province_g" providerKey="spatialite">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" source="dbname='F:/test_selectbyrelationshipv3/db_test_SbyR_v3.sqlite' table=&quot;province_g&quot; (geom) sql=" id="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" providerKey="spatialite" name="province_g">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" source="dbname='C:/Users/Salvatore/Desktop/selectby/db_test_SbyR_v3.sqlite' table=&quot;comuni_g&quot; (geom) sql=" expanded="1" id="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" name="comuni_g" providerKey="spatialite">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" source="dbname='F:/test_selectbyrelationshipv3/db_test_SbyR_v3.sqlite' table=&quot;comuni_g&quot; (geom) sql=" id="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" providerKey="spatialite" name="comuni_g">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -33,28 +33,28 @@
       <item>comuni_g_d45825a1_e4ea_449f_a112_41c66409799f</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings unit="2" tolerance="0" enabled="0" mode="2" intersection-snapping="0" type="1">
+  <snapping-settings enabled="0" intersection-snapping="0" mode="2" unit="2" tolerance="0" type="1">
     <individual-layer-settings>
-      <layer-setting tolerance="0" enabled="0" id="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" type="1" units="2"/>
-      <layer-setting tolerance="0" enabled="0" id="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" type="1" units="2"/>
-      <layer-setting tolerance="0" enabled="0" id="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" type="1" units="2"/>
+      <layer-setting enabled="0" tolerance="0" id="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" type="1" units="2"/>
+      <layer-setting enabled="0" tolerance="0" id="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" type="1" units="2"/>
+      <layer-setting enabled="0" tolerance="0" id="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" type="1" units="2"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations>
-    <relation referencedLayer="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" strength="Association" id="rel_prov_com" name="rel_prov_com" referencingLayer="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f">
+    <relation referencingLayer="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" id="rel_prov_com" referencedLayer="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" strength="Association" name="rel_prov_com">
       <fieldRef referencedField="COD_PROV" referencingField="COD_PROV"/>
     </relation>
-    <relation referencedLayer="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" strength="Association" id="rel_reg_prov" name="rel_reg_prov" referencingLayer="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff">
+    <relation referencingLayer="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" id="rel_reg_prov" referencedLayer="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" strength="Association" name="rel_reg_prov">
       <fieldRef referencedField="COD_REG" referencingField="COD_REG"/>
     </relation>
   </relations>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>916463.43932617420796305</xmin>
-      <ymin>4096994.54083096887916327</ymin>
-      <xmax>1004403.90284617396537215</xmax>
-      <ymax>4203136.09159096237272024</ymax>
+      <xmin>288310.82892000034917146</xmin>
+      <ymin>3901685.06368500087410212</ymin>
+      <xmax>1336984.57308000046759844</xmax>
+      <ymax>5252453.4441149989143014</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -72,26 +72,26 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
-    <legendlayer checked="Qt::Unchecked" drawingOrder="-1" showFeatureCount="0" name="regioni_g" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" visible="0" isInOverview="0"/>
+    <legendlayer checked="Qt::Unchecked" showFeatureCount="0" open="true" drawingOrder="-1" name="regioni_g">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="regioni_g_68d1b2c3_3d2a_4c23_9abf_d82e67ecc911" isInOverview="0" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0" name="province_g" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" visible="1" isInOverview="0"/>
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" open="true" drawingOrder="-1" name="province_g">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="province_g_39aa0df1_c7c6_493f_9d3f_47274b9800ff" isInOverview="0" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0" name="comuni_g" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" visible="1" isInOverview="0"/>
+    <legendlayer checked="Qt::Checked" showFeatureCount="0" open="true" drawingOrder="-1" name="comuni_g">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f" isInOverview="0" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
   <projectlayers>
-    <maplayer simplifyDrawingTol="1" simplifyMaxScale="1" readOnly="0" maxScale="0" refreshOnNotifyMessage="" minScale="1e+8" simplifyAlgorithm="0" simplifyDrawingHints="1" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" geometry="Polygon" labelsEnabled="0" autoRefreshEnabled="0" type="vector" simplifyLocal="1">
+    <maplayer hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" readOnly="0" geometry="Polygon" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" maxScale="0" simplifyLocal="1" simplifyDrawingTol="1" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>313279.2514000004157424</xmin>
         <ymin>3933846.21560000069439411</ymin>
@@ -134,7 +134,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -149,26 +149,26 @@
         <map-layer-style name="predefinito"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="singleSymbol">
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
         <symbols>
-          <symbol clip_to_extent="1" alpha="1" name="0" type="fill">
-            <layer class="SimpleFill" locked="0" enabled="1" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="128,202,131,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol clip_to_extent="1" alpha="1" type="fill" name="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="128,202,131,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -272,48 +272,48 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias field="pk" name="" index="0"/>
-        <alias field="PK_UID" name="" index="1"/>
-        <alias field="COD_RIP" name="" index="2"/>
-        <alias field="COD_REG" name="" index="3"/>
-        <alias field="COD_PROV" name="" index="4"/>
-        <alias field="COD_CM" name="" index="5"/>
-        <alias field="COD_PCM" name="" index="6"/>
-        <alias field="PRO_COM" name="" index="7"/>
-        <alias field="PRO_COM_T" name="" index="8"/>
-        <alias field="COMUNE" name="" index="9"/>
-        <alias field="COMUNE_A" name="" index="10"/>
-        <alias field="CC_P_CM" name="" index="11"/>
+        <alias field="pk" index="0" name=""/>
+        <alias field="PK_UID" index="1" name=""/>
+        <alias field="COD_RIP" index="2" name=""/>
+        <alias field="COD_REG" index="3" name=""/>
+        <alias field="COD_PROV" index="4" name=""/>
+        <alias field="COD_CM" index="5" name=""/>
+        <alias field="COD_PCM" index="6" name=""/>
+        <alias field="PRO_COM" index="7" name=""/>
+        <alias field="PRO_COM_T" index="8" name=""/>
+        <alias field="COMUNE" index="9" name=""/>
+        <alias field="COMUNE_A" index="10" name=""/>
+        <alias field="CC_P_CM" index="11" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="pk" expression="" applyOnUpdate="0"/>
-        <default field="PK_UID" expression="" applyOnUpdate="0"/>
-        <default field="COD_RIP" expression="" applyOnUpdate="0"/>
-        <default field="COD_REG" expression="" applyOnUpdate="0"/>
-        <default field="COD_PROV" expression="" applyOnUpdate="0"/>
-        <default field="COD_CM" expression="" applyOnUpdate="0"/>
-        <default field="COD_PCM" expression="" applyOnUpdate="0"/>
-        <default field="PRO_COM" expression="" applyOnUpdate="0"/>
-        <default field="PRO_COM_T" expression="" applyOnUpdate="0"/>
-        <default field="COMUNE" expression="" applyOnUpdate="0"/>
-        <default field="COMUNE_A" expression="" applyOnUpdate="0"/>
-        <default field="CC_P_CM" expression="" applyOnUpdate="0"/>
+        <default field="pk" applyOnUpdate="0" expression=""/>
+        <default field="PK_UID" applyOnUpdate="0" expression=""/>
+        <default field="COD_RIP" applyOnUpdate="0" expression=""/>
+        <default field="COD_REG" applyOnUpdate="0" expression=""/>
+        <default field="COD_PROV" applyOnUpdate="0" expression=""/>
+        <default field="COD_CM" applyOnUpdate="0" expression=""/>
+        <default field="COD_PCM" applyOnUpdate="0" expression=""/>
+        <default field="PRO_COM" applyOnUpdate="0" expression=""/>
+        <default field="PRO_COM_T" applyOnUpdate="0" expression=""/>
+        <default field="COMUNE" applyOnUpdate="0" expression=""/>
+        <default field="COMUNE_A" applyOnUpdate="0" expression=""/>
+        <default field="CC_P_CM" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint field="pk" exp_strength="0" unique_strength="1" constraints="3" notnull_strength="1"/>
-        <constraint field="PK_UID" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_RIP" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_REG" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_PROV" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_CM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_PCM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="PRO_COM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="PRO_COM_T" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COMUNE" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COMUNE_A" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="CC_P_CM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="pk" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
+        <constraint field="PK_UID" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_RIP" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_REG" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_PROV" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_CM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_PCM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="PRO_COM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="PRO_COM_T" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COMUNE" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COMUNE_A" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="CC_P_CM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
         <constraint field="pk" desc="" exp=""/>
@@ -330,23 +330,23 @@
         <constraint field="CC_P_CM" desc="" exp=""/>
       </constraintExpressions>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column width="-1" name="pk" hidden="0" type="field"/>
-          <column width="-1" name="PK_UID" hidden="0" type="field"/>
-          <column width="-1" name="COD_RIP" hidden="0" type="field"/>
-          <column width="-1" name="COD_REG" hidden="0" type="field"/>
-          <column width="-1" name="COD_PROV" hidden="0" type="field"/>
-          <column width="-1" name="COD_CM" hidden="0" type="field"/>
-          <column width="-1" name="COD_PCM" hidden="0" type="field"/>
-          <column width="-1" name="PRO_COM" hidden="0" type="field"/>
-          <column width="-1" name="PRO_COM_T" hidden="0" type="field"/>
-          <column width="-1" name="COMUNE" hidden="0" type="field"/>
-          <column width="-1" name="COMUNE_A" hidden="0" type="field"/>
-          <column width="-1" name="CC_P_CM" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" width="-1" type="field" name="pk"/>
+          <column hidden="0" width="-1" type="field" name="PK_UID"/>
+          <column hidden="0" width="-1" type="field" name="COD_RIP"/>
+          <column hidden="0" width="-1" type="field" name="COD_REG"/>
+          <column hidden="0" width="-1" type="field" name="COD_PROV"/>
+          <column hidden="0" width="-1" type="field" name="COD_CM"/>
+          <column hidden="0" width="-1" type="field" name="COD_PCM"/>
+          <column hidden="0" width="-1" type="field" name="PRO_COM"/>
+          <column hidden="0" width="-1" type="field" name="PRO_COM_T"/>
+          <column hidden="0" width="-1" type="field" name="COMUNE"/>
+          <column hidden="0" width="-1" type="field" name="COMUNE_A"/>
+          <column hidden="0" width="-1" type="field" name="CC_P_CM"/>
+          <column hidden="1" width="-1" type="actions"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -367,7 +367,7 @@
       <previewExpression>"PK_UID"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyDrawingTol="1" simplifyMaxScale="1" readOnly="0" maxScale="0" refreshOnNotifyMessage="" minScale="1e+8" simplifyAlgorithm="0" simplifyDrawingHints="1" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" geometry="Polygon" labelsEnabled="0" autoRefreshEnabled="0" type="vector" simplifyLocal="1">
+    <maplayer hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" readOnly="0" geometry="Polygon" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" maxScale="0" simplifyLocal="1" simplifyDrawingTol="1" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>313279.2514000004157424</xmin>
         <ymin>3933846.21560000069439411</ymin>
@@ -425,26 +425,26 @@
         <map-layer-style name="predefinito"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="singleSymbol">
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
         <symbols>
-          <symbol clip_to_extent="1" alpha="1" name="0" type="fill">
-            <layer class="SimpleFill" locked="0" enabled="1" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="169,148,220,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.86"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="no"/>
+          <symbol clip_to_extent="1" alpha="1" type="fill" name="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="169,148,220,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0,0,0,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.86" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="no" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -541,45 +541,45 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias field="pk" name="" index="0"/>
-        <alias field="PK_UID" name="" index="1"/>
-        <alias field="COD_RIP" name="" index="2"/>
-        <alias field="COD_REG" name="" index="3"/>
-        <alias field="COD_PROV" name="" index="4"/>
-        <alias field="COD_CM" name="" index="5"/>
-        <alias field="COD_PCM" name="" index="6"/>
-        <alias field="DEN_PROV" name="" index="7"/>
-        <alias field="DEN_CM" name="" index="8"/>
-        <alias field="DEN_PCM" name="" index="9"/>
-        <alias field="SIGLA" name="" index="10"/>
+        <alias field="pk" index="0" name=""/>
+        <alias field="PK_UID" index="1" name=""/>
+        <alias field="COD_RIP" index="2" name=""/>
+        <alias field="COD_REG" index="3" name=""/>
+        <alias field="COD_PROV" index="4" name=""/>
+        <alias field="COD_CM" index="5" name=""/>
+        <alias field="COD_PCM" index="6" name=""/>
+        <alias field="DEN_PROV" index="7" name=""/>
+        <alias field="DEN_CM" index="8" name=""/>
+        <alias field="DEN_PCM" index="9" name=""/>
+        <alias field="SIGLA" index="10" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="pk" expression="" applyOnUpdate="0"/>
-        <default field="PK_UID" expression="" applyOnUpdate="0"/>
-        <default field="COD_RIP" expression="" applyOnUpdate="0"/>
-        <default field="COD_REG" expression="" applyOnUpdate="0"/>
-        <default field="COD_PROV" expression="" applyOnUpdate="0"/>
-        <default field="COD_CM" expression="" applyOnUpdate="0"/>
-        <default field="COD_PCM" expression="" applyOnUpdate="0"/>
-        <default field="DEN_PROV" expression="" applyOnUpdate="0"/>
-        <default field="DEN_CM" expression="" applyOnUpdate="0"/>
-        <default field="DEN_PCM" expression="" applyOnUpdate="0"/>
-        <default field="SIGLA" expression="" applyOnUpdate="0"/>
+        <default field="pk" applyOnUpdate="0" expression=""/>
+        <default field="PK_UID" applyOnUpdate="0" expression=""/>
+        <default field="COD_RIP" applyOnUpdate="0" expression=""/>
+        <default field="COD_REG" applyOnUpdate="0" expression=""/>
+        <default field="COD_PROV" applyOnUpdate="0" expression=""/>
+        <default field="COD_CM" applyOnUpdate="0" expression=""/>
+        <default field="COD_PCM" applyOnUpdate="0" expression=""/>
+        <default field="DEN_PROV" applyOnUpdate="0" expression=""/>
+        <default field="DEN_CM" applyOnUpdate="0" expression=""/>
+        <default field="DEN_PCM" applyOnUpdate="0" expression=""/>
+        <default field="SIGLA" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint field="pk" exp_strength="0" unique_strength="1" constraints="3" notnull_strength="1"/>
-        <constraint field="PK_UID" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_RIP" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_REG" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_PROV" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_CM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_PCM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="DEN_PROV" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="DEN_CM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="DEN_PCM" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="SIGLA" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="pk" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
+        <constraint field="PK_UID" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_RIP" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_REG" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_PROV" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_CM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_PCM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="DEN_PROV" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="DEN_CM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="DEN_PCM" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="SIGLA" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
         <constraint field="pk" desc="" exp=""/>
@@ -595,22 +595,22 @@
         <constraint field="SIGLA" desc="" exp=""/>
       </constraintExpressions>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column width="-1" name="pk" hidden="0" type="field"/>
-          <column width="-1" name="PK_UID" hidden="0" type="field"/>
-          <column width="-1" name="COD_RIP" hidden="0" type="field"/>
-          <column width="-1" name="COD_REG" hidden="0" type="field"/>
-          <column width="79" name="COD_PROV" hidden="0" type="field"/>
-          <column width="65" name="COD_CM" hidden="0" type="field"/>
-          <column width="73" name="COD_PCM" hidden="0" type="field"/>
-          <column width="78" name="DEN_PROV" hidden="0" type="field"/>
-          <column width="-1" name="DEN_CM" hidden="0" type="field"/>
-          <column width="-1" name="DEN_PCM" hidden="0" type="field"/>
-          <column width="-1" name="SIGLA" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" width="-1" type="field" name="pk"/>
+          <column hidden="0" width="-1" type="field" name="PK_UID"/>
+          <column hidden="0" width="-1" type="field" name="COD_RIP"/>
+          <column hidden="0" width="-1" type="field" name="COD_REG"/>
+          <column hidden="0" width="79" type="field" name="COD_PROV"/>
+          <column hidden="0" width="65" type="field" name="COD_CM"/>
+          <column hidden="0" width="73" type="field" name="COD_PCM"/>
+          <column hidden="0" width="78" type="field" name="DEN_PROV"/>
+          <column hidden="0" width="-1" type="field" name="DEN_CM"/>
+          <column hidden="0" width="-1" type="field" name="DEN_PCM"/>
+          <column hidden="0" width="-1" type="field" name="SIGLA"/>
+          <column hidden="1" width="-1" type="actions"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -631,7 +631,7 @@
       <previewExpression>"PK_UID"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyDrawingTol="1" simplifyMaxScale="1" readOnly="0" maxScale="0" refreshOnNotifyMessage="" minScale="1e+8" simplifyAlgorithm="0" simplifyDrawingHints="1" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" geometry="Polygon" labelsEnabled="0" autoRefreshEnabled="0" type="vector" simplifyLocal="1">
+    <maplayer hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" readOnly="0" geometry="Polygon" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" maxScale="0" simplifyLocal="1" simplifyDrawingTol="1" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>313279.2514000004157424</xmin>
         <ymin>3933846.21560000069439411</ymin>
@@ -689,26 +689,26 @@
         <map-layer-style name="predefinito"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="singleSymbol">
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
         <symbols>
-          <symbol clip_to_extent="1" alpha="1" name="0" type="fill">
-            <layer class="SimpleFill" locked="0" enabled="1" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="204,130,240,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="60,134,213,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.46"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="no"/>
+          <symbol clip_to_extent="1" alpha="1" type="fill" name="0">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="204,130,240,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="60,134,213,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.46" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="no" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -718,7 +718,7 @@
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property value="&quot;PK_UID&quot;" key="dualview/previewExpressions"/>
+        <property key="dualview/previewExpressions" value="&quot;PK_UID&quot;"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -768,30 +768,30 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias field="pk" name="" index="0"/>
-        <alias field="PK_UID" name="" index="1"/>
-        <alias field="COD_RIP" name="" index="2"/>
-        <alias field="COD_REG" name="" index="3"/>
-        <alias field="DEN_REG" name="" index="4"/>
-        <alias field="_median" name="" index="5"/>
+        <alias field="pk" index="0" name=""/>
+        <alias field="PK_UID" index="1" name=""/>
+        <alias field="COD_RIP" index="2" name=""/>
+        <alias field="COD_REG" index="3" name=""/>
+        <alias field="DEN_REG" index="4" name=""/>
+        <alias field="_median" index="5" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="pk" expression="" applyOnUpdate="0"/>
-        <default field="PK_UID" expression="" applyOnUpdate="0"/>
-        <default field="COD_RIP" expression="" applyOnUpdate="0"/>
-        <default field="COD_REG" expression="" applyOnUpdate="0"/>
-        <default field="DEN_REG" expression="" applyOnUpdate="0"/>
-        <default field="_median" expression="" applyOnUpdate="0"/>
+        <default field="pk" applyOnUpdate="0" expression=""/>
+        <default field="PK_UID" applyOnUpdate="0" expression=""/>
+        <default field="COD_RIP" applyOnUpdate="0" expression=""/>
+        <default field="COD_REG" applyOnUpdate="0" expression=""/>
+        <default field="DEN_REG" applyOnUpdate="0" expression=""/>
+        <default field="_median" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint field="pk" exp_strength="0" unique_strength="1" constraints="3" notnull_strength="1"/>
-        <constraint field="PK_UID" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_RIP" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="COD_REG" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="DEN_REG" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
-        <constraint field="_median" exp_strength="0" unique_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="pk" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
+        <constraint field="PK_UID" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_RIP" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="COD_REG" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="DEN_REG" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+        <constraint field="_median" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
         <constraint field="pk" desc="" exp=""/>
@@ -802,17 +802,17 @@
         <constraint field="_median" desc="" exp=""/>
       </constraintExpressions>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column width="36" name="pk" hidden="0" type="field"/>
-          <column width="56" name="PK_UID" hidden="0" type="field"/>
-          <column width="64" name="COD_RIP" hidden="0" type="field"/>
-          <column width="69" name="COD_REG" hidden="0" type="field"/>
-          <column width="74" name="DEN_REG" hidden="0" type="field"/>
-          <column width="-1" name="_median" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column hidden="0" width="36" type="field" name="pk"/>
+          <column hidden="0" width="56" type="field" name="PK_UID"/>
+          <column hidden="0" width="64" type="field" name="COD_RIP"/>
+          <column hidden="0" width="69" type="field" name="COD_REG"/>
+          <column hidden="0" width="74" type="field" name="DEN_REG"/>
+          <column hidden="0" width="-1" type="field" name="_median"/>
+          <column hidden="1" width="-1" type="actions"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -840,91 +840,91 @@
     <layer id="comuni_g_d45825a1_e4ea_449f_a112_41c66409799f"/>
   </layerorder>
   <properties>
+    <WMSContactPerson type="QString"></WMSContactPerson>
     <PAL>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <SearchMethod type="int">0</SearchMethod>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
       <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
       <DrawRectOnly type="bool">false</DrawRectOnly>
       <CandidatesPoint type="int">16</CandidatesPoint>
-      <SearchMethod type="int">0</SearchMethod>
-      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
       <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
       <ShowingCandidates type="bool">false</ShowingCandidates>
     </PAL>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WFSUrl type="QString"></WFSUrl>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
-    <WMSPrecision type="QString">8</WMSPrecision>
     <WCSLayers type="QStringList"/>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WFSLayers type="QStringList"/>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <Identify>
-      <disabledLayers type="QStringList"/>
-    </Identify>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WCSUrl type="QString"></WCSUrl>
-    <WFSTLayers>
-      <Update type="QStringList"/>
-      <Insert type="QStringList"/>
-      <Delete type="QStringList"/>
-    </WFSTLayers>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSUrl type="QString"></WMSUrl>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSFees type="QString">conditions unknown</WMSFees>
-    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSServiceTitle type="QString"></WMSServiceTitle>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WMSContactMail type="QString"></WMSContactMail>
     <Measure>
       <Ellipsoid type="QString">WGS84</Ellipsoid>
     </Measure>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WFSUrl type="QString"></WFSUrl>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSContactMail type="QString"></WMSContactMail>
     <DefaultStyles>
-      <Line type="QString"></Line>
-      <Fill type="QString"></Fill>
-      <RandomColors type="bool">true</RandomColors>
-      <Marker type="QString"></Marker>
       <Opacity type="double">1</Opacity>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
       <ColorRamp type="QString"></ColorRamp>
+      <Marker type="QString"></Marker>
     </DefaultStyles>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
     <Gui>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
       <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
       <CanvasColorRedPart type="int">255</CanvasColorRedPart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
     </Gui>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Delete type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
   </properties>
   <visibility-presets/>
   <transformContext/>
