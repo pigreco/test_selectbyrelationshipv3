@@ -15,7 +15,9 @@ Questo repo serve a fare test
 
 ---
 
-Il plugin, installato tramite [file.zip](https://github.com/pyarchinit/selectbyrelationship_repo/releases/tag/v0.3.0), si presenta con due icone: <img src="/images/icone_p.png">; la seconda (le opzioni) si attiva solo dopo aver attivato il plugin con la prima icona.
+Il plugin, installato tramite [file.zip](https://github.com/pyarchinit/selectbyrelationship_repo/releases/tag/v0.3.0), si presenta con due icone: la seconda (settings) si attiva solo dopo aver attivato il plugin con la prima icona.
+
+<img src="/images/icone_p.png">
 
 * la prima icona: '_Allows selections by relationship_' attiva la selezione figlio-padre (configurazione di default);
 * la seconda icona '_settings_'ha tre opzioni:
