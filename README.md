@@ -11,7 +11,7 @@ Questo repo serve a fare test
 * progetto QGIS 3.0:
     * create due relazioni:
         * tra regioni (padre) e province (figlio) - chiave "COD_REG";
-        * tre province (padre) e comuni (figlio) - chiave "COD_PROV";
+        * tra province (padre) e comuni (figlio) - chiave "COD_PROV";
 
 ---
 
