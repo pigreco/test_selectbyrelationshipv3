@@ -13,6 +13,12 @@ Questo repo serve a fare test
         * tra regioni (padre) e province (figlio) - chiave "COD_REG";
         * tra province (padre) e comuni (figlio) - chiave "COD_PROV";
 
+## Osservazioni
+
+* la tabella _regioni_ è solo padre (padre di province);
+* la tabella _province_ è padre e figlia (padre di comuni);
+* la tabella _comuni_ è solo figlia;
+
 ---
 
 Il plugin, installato tramite [file.zip](https://github.com/pyarchinit/selectbyrelationship_repo/releases/tag/v0.3.0), si presenta con due icone: la seconda (settings) si attiva solo dopo aver attivato il plugin con la prima icona.
