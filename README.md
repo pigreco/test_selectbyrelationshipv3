@@ -22,12 +22,13 @@ In questo repo faremo dei test sul plugin Selectbyrelationship per >= QGIS 3.0
 
 ---
 
-Il plugin, installato tramite [file.zip](https://github.com/pyarchinit/selectbyrelationship_repo/releases/tag/v0.3.0), si presenta con due icone: la seconda (settings) si attiva solo dopo aver attivato il plugin (con la prima icona).
+Il plugin, installato tramite zip, si presenta con tre icone: la seconda e la terza (settings) si attivano solo dopo aver attivato il plugin (con la prima icona).
 
 <img src="/images/icone_p2.png">
 
 * la prima icona: '_Allows selections by relationship_' attiva la selezione figlio-padre (configurazione di default);
-* la seconda icona '_settings_'ha tre opzioni:
+* la seconda icona _Select Relationship_, un menu a tendina, permette di attivare le relazioni del progetto; di default non è selezionata nessuna relazione, quindi il plugin non lavora;
+* la terza icona '_settings_'ha tre opzioni:
     * Zoom to Feature to of Parent Layer (Zoom feature Padre);
     * Select Feature(s) of Child From Parent Layer (Seleziona Figli selezionando Padri);
     * Active Parent Layer (Attiva layer Padre);
