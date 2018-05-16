@@ -62,4 +62,4 @@ Un videotutorial di **Salvatore Fiandaca** in cui viene mostrato l'uso della mac
 Un altro videotutorial di **Salvatore Fiandaca** per testare il codice macro python incorporato nel plugin selectFromRelations: [link](https://www.youtube.com/watch?v=4lXRnsMO-qI)
 
 
-[Come installare il plugin](installazione_zip.md) 
+[Come installare il plugin e fare dei test](installazione_zip.md) 
