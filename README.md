@@ -44,16 +44,16 @@ Dopo l'installazione apparirà una tool bar con tre bottoni:
 3. Attivare il plugin tramite prima icona e attiva una relazione per consentire la selezione figlio-padre (configurazione di default).
 
 Ora puoi selezionare i record tra molte tabelle correlate.
-Potete vedere un esempio in questo videotutorial di **Salvatore Fiandaca**: link
+Potete vedere un esempio in questo videotutorial di **Salvatore Fiandaca**: [link](https://youtu.be/EGfFCOfAS5E)
 
 ## Un po' di storia:
 
-Il plugin è iniziato da un thread originale pubblicato da Salvatore Fiandaca e sviluppato da Andrea Borruso e Salvatore Larosa: Thread originale
+Il plugin è iniziato da un thread originale pubblicato da **Salvatore Fiandaca** e sviluppato da **Andrea Borruso** e **Salvatore Larosa**: [Thread originale](http://osgeo-org.1560.x6.nabble.com/QGIS-select-in-join-tabella-in-relazione-td5317093.html)
 
-Un primo post di Andrea Borruso: link
+Un primo post di **Andrea Borruso**: [post](https://medium.com/tantotanto/qgis-selezionare-geometrie-da-una-tabella-di-attributi-correlata-bea37747a7e2)
 
-La macro pitone originale di Salvatore Larosa: link
+La macro Python originale di **Salvatore Larosa**: [link](https://gist.github.com/slarosa/653e6d759cf0d82c2a24dcc499b094e0)
 
-Un videotutorial di Salvatore Fiandaca in cui viene mostrato l'uso della macro pitone di Salvatore Larosa: link
+Un videotutorial di **Salvatore Fiandaca** in cui viene mostrato l'uso della macro pitone di **Salvatore Larosa**: [link](https://www.youtube.com/watch?v=PRDftcPWNg8)
 
-Un altro videotutorial di Salvatore Fiandaca per testare il codice macro python incorporato nel plugin selectFromRelations: link
+Un altro videotutorial di **Salvatore Fiandaca** per testare il codice macro python incorporato nel plugin selectFromRelations: [link](https://www.youtube.com/watch?v=4lXRnsMO-qI)
