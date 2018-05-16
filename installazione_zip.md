@@ -12,9 +12,9 @@
 
 3. scarica il progetto e il database per i test
 
-<img src="/images/plugin3.png">
+<img src="/images/plugin4.png">
 
-<img src="/images/plugin3.png">
+<img src="/images/plugin5.png">
 
 BUON LAVORO e W QGIS!!!
 
