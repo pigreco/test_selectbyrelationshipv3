@@ -46,6 +46,10 @@ Dopo l'installazione apparirà una tool bar con tre bottoni:
 Ora puoi selezionare i record tra molte tabelle correlate.
 Potete vedere un esempio in questo videotutorial di **Salvatore Fiandaca**: [link](https://youtu.be/EGfFCOfAS5E)
 
+[![Plugin SelectByRelationshipv3](https://img.youtube.com/vi/EGfFCOfAS5E/0.jpg)](https://youtu.be/EGfFCOfAS5E "SelectByRelationshipv3")
+
+
+
 ## Un po' di storia:
 
 Il plugin è iniziato da un thread originale pubblicato da **Salvatore Fiandaca** e sviluppato da **Andrea Borruso** e **Salvatore Larosa**: [Thread originale](http://osgeo-org.1560.x6.nabble.com/QGIS-select-in-join-tabella-in-relazione-td5317093.html)
