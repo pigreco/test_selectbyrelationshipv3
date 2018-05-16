@@ -1,6 +1,6 @@
-## test_selectbyrelationshipv3
+## Test plugin Select by relationship v3
 
-In questo repo faremo dei test sul plugin Selectbyrelationship per >= QGIS 3.0
+In questo repo faremo dei test sul plugin per >= QGIS 3.0
 
 ## Dati e progetto
 
@@ -47,7 +47,6 @@ Ora puoi selezionare i record tra molte tabelle correlate.
 Potete vedere un esempio in questo videotutorial di **Salvatore Fiandaca**: [link](https://youtu.be/EGfFCOfAS5E)
 
 [![Plugin SelectByRelationshipv3](https://img.youtube.com/vi/EGfFCOfAS5E/0.jpg)](https://youtu.be/EGfFCOfAS5E "SelectByRelationshipv3")
-
 
 
 ## Un po' di storia:
