@@ -60,3 +60,6 @@ La macro Python originale di **Salvatore Larosa**: [link](https://gist.github.co
 Un videotutorial di **Salvatore Fiandaca** in cui viene mostrato l'uso della macro pitone di **Salvatore Larosa**: [link](https://www.youtube.com/watch?v=PRDftcPWNg8)
 
 Un altro videotutorial di **Salvatore Fiandaca** per testare il codice macro python incorporato nel plugin selectFromRelations: [link](https://www.youtube.com/watch?v=4lXRnsMO-qI)
+
+
+[Come installare il plugin](installazione_zip.md) 
